@@ -1,4 +1,4 @@
-# lazy_tuner
+# lazy_tune
 
 Hyperparameter optimization using keras tuner.
 First min fucntional system = V1:
