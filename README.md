@@ -1,5 +1,6 @@
 # lazy_tuner
 
+Hyperparameter optimization using keras tuner.
 First min fucntional system = V1:
 - parses results, retrives best hps after train
 - retrains model with optimizing epochs
