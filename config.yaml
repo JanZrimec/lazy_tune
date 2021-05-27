@@ -1,0 +1,26 @@
+experiment_name: _kt_athaliana_updated_test
+
+input_files: # first one each
+  models:
+    Model_C3F2vars: models/kt_C3F2vars.py
+  datasets:
+    athaliana_lambda_rsd1: data/athaliana_updated_cds.rsd1.npz
+
+params: # first one each
+  optimizer_iterations: 1000
+  replicate_seed: [1111] # for replicate runs, define at least one
+  test_split: 0.1
+  validation_split: 0.1
+  verbose: 0 # verbosity level of training; default=0, type=int, choices=[0, 1, 2]
+  tensorboard: False
+  epochs: [150]
+  mbatch: [128]
+  #early stopping
+  min_delta: [0.01]
+  patience: [10]
+  
+#hyperparams:
+  #learning rate scheduler
+  #lrs: [True]
+  #lrs_epoch_drop: [10]
+  
